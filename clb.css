@@ -1,0 +1,66 @@
+.count-link-box {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+        border: 2px solid #000;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        flex-wrap: nowrap;
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        height: 50px;
+    }
+    .count-link-box img {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+    .count-link-text {
+        flex-grow: 1;
+        margin-left: 10px;
+        font-size: 14px;
+        color: black;
+    }
+    .count-link-box:hover {
+        background-color: #d0d0d0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    .count-link-box:hover .count-link-text {
+        color: black;
+    }
+    .count-live-now {
+        background-color: red;
+        color: white; /* Changed to white */
+        padding: 2px 5px;
+        border-radius: 1px;
+        font-size: 10px;
+    }
+    .count-blink {
+        animation: count-blink-animation 1s steps(2, start) infinite;
+    }
+    @keyframes count-blink-animation {
+        to {
+            visibility: hidden;
+        }
+    }
+    .count-countdown span, .count-match-end span {
+        background-color: black;
+        color: white;
+        padding: 6px 6px;
+        border-radius: 1px;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+    @media (max-width: 600px) {
+        .count-link-text {
+            margin-left: 5px;
+            font-size: 12px;
+        }
+        .count-live-now {
+            font-size: 8px;
+        }
+        .count-countdown span, .count-match-end span {
+            font-size: 8px;
+        }
+    }

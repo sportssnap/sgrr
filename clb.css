@@ -60,11 +60,6 @@
         .count-live-now {
             font-size: 8px;
         }
-        .link-disabled {
-    pointer-events: none;
-    cursor: default;
-    color: gray; /* or any other styling to indicate it's disabled */
-}
 
         .count-countdown span, .count-match-end span {
             font-size: 8px;
